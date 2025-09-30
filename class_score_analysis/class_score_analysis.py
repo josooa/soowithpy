@@ -1,6 +1,3 @@
-from fileinput import filename
-
-
 def read_data(filename):
     # TODO) Read `filename` as a list of integers
     data = []
