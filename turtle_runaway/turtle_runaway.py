@@ -32,6 +32,18 @@ class RunawayGame:
         self.game_over = False
         self.time_elapsed = 0  # 시간 측정용
 
+        # 출구 이미지 등록 및 RawTurtle 생성(한 번만)
+        try:
+            self.canvas.addshape("turtle.gif")
+            self.exit_turtle = turtle.RawTurtle(self.canvas)
+            self.exit_turtle.hideturtle()
+            self.exit_turtle.penup()
+            self.exit_turtle.shape("turtle.gif")
+            self.exit_turtle.goto(EXIT_POS)
+            self.exit_turtle.showturtle()
+        except Exception as e:
+            self.exit_turtle = None  # 이미지가 없으면 None
+
     def is_catched(self):
         p = self.runner.pos()
         q = self.chaser.pos()
@@ -42,7 +54,7 @@ class RunawayGame:
         # 출구 근처에 도달하면 탈출 성공
         rx, ry = self.runner.pos()
         ex, ey = EXIT_POS
-        return ((rx - ex) ** 2 + (ry - ey) ** 2) < EXIT_RADIUS ** 2
+        return ((rx - ex) ** 2 + (ry - ey) ** 2) <= EXIT_RADIUS ** 2
 
     def start(self, init_dist=400, ai_timer_msec=100):
         self.canvas.bgcolor("lightgreen")
@@ -87,14 +99,12 @@ class RunawayGame:
             jail.pendown()
             jail.forward(JAIL_SIZE)
             jail.penup()
-        # 출구 표시 (원)
-        jail.goto(EXIT_POS[0], EXIT_POS[1] - EXIT_RADIUS)
+        # 출구를 점으로 표시
+        jail.goto(EXIT_POS[0], EXIT_POS[1])
         jail.pencolor("orange")
-        jail.pendown()
-        jail.circle(EXIT_RADIUS)
-        jail.penup()
+        jail.dot(20)
         jail.pencolor("black")
-
+        
     def step(self):
         if self.game_over:
             return
