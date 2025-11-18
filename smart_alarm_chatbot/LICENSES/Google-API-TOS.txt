@@ -1,0 +1,6 @@
+Google APIs Terms of Service
+
+The use of Google APIs is governed by the Google APIs Terms of Service:
+https://developers.google.com/terms
+
+Please refer to the above link for the full and up-to-date terms.

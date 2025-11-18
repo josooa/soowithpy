@@ -1,0 +1,9 @@
+{
+  "alarms": [
+    {
+      "hour": 11,
+      "minute": 15
+    }
+  ],
+  "events": []
+}
