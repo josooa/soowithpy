@@ -31,8 +31,8 @@
 ![Main GUI Screenshot](images\smart_alarm_chatbot_4.png)
 
 ### 🎥 Video
-![실행영상](images\smart_alarm_.mp4)
-![실행영상](images\smart_alarm_sequence.mp4)
+![실행영상](images/smart_alarm_.mp4)
+![실행영상](images/smart_alarm_sequence.mp4)
 
 ---
 
