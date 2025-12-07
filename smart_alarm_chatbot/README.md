@@ -36,6 +36,9 @@
 ### 🎥 Video
 ![실행영상](images/smart_alarm_.mp4)
 ![실행영상](images/smart_alarm_sequence.mp4)
+> ⚠️ Some demo files are large and may not preview on GitHub.  
+> Please click "View raw" to open them directly.
+
 
 ---
 
