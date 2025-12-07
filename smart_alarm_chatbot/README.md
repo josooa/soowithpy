@@ -25,10 +25,13 @@
 **Smart Alarm Chatbot**, 지금 시작하세요.
 
 ---
+![이미지홍보물](images/smart_alarm_chatbot.png)
+
+---
 
 ## Demo
 ### 🖼️ Screenshot
-![Main GUI Screenshot](images\smart_alarm_chatbot_4.png)
+![Main GUI Screenshot](images/smart_alarm_chatbot_4.png)
 
 ### 🎥 Video
 ![실행영상](images/smart_alarm_.mp4)
