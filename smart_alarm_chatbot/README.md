@@ -24,6 +24,17 @@
 당신의 하루를 더 스마트하게.  
 **Smart Alarm Chatbot**, 지금 시작하세요.
 
+---
+
+## Demo
+### 🖼️ Screenshot
+![Main GUI Screenshot](images\smart_alarm_chatbot_4.png)
+
+### 🎥 Video
+![실행영상](images\smart_alarm_.mp4)
+![실행영상](images\smart_alarm_sequence.mp4)
+
+---
 
 ## 📚 오픈소스 출처 (Acknowledgements)
 
@@ -37,3 +48,8 @@
 - [gTTS](https://pypi.org/project/gTTS/) – Google Text-to-Speech (MIT License)
 
 라이선스 전문은 [LICENSES](./LICENSES) 디렉토리에 포함되어 있습니다.
+
+
+## 📄 License
+This project is licensed under the MIT License.  
+See the [LICENSE](./LICENSE) file for details.
